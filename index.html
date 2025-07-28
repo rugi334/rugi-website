@@ -38,6 +38,19 @@
             color: #aaa;
         }
     </style>
+            @keyframes rugiEffect {
+  0%   { transform: rotate(0deg) scale(1); color: #ff0044; }
+  20%  { transform: rotate(1deg) scale(1.05); color: orange; }
+  40%  { transform: rotate(-1deg) scale(1.1); color: yellow; }
+  60%  { transform: rotate(1deg) scale(1.05); color: lime; }
+  80%  { transform: rotate(-1deg) scale(1); color: cyan; }
+  100% { transform: rotate(0deg) scale(1); color: #ff0044; }
+}
+
+h1 {
+  font-size: 48px;
+  animation: rugiEffect 2s infinite;
+}
 </head>
 <body>
     <header>
